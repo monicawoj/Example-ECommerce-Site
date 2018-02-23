@@ -169,15 +169,30 @@ section.products {
     border: 1px solid red;
     float: left;
     margin-top: 50px;
-}
-
-.chair:first-child {
     margin-right: 2%;
 }
 
 .chair:last-child {
-    float: right;
-    padding-right: 0;
+    margin-right: 0%;
+}
+
+.claire {
+    background-image: url(../images/box1_img.jpg);
+}
+
+.margarita {
+    background-image: url(../images/box2_img.jpg);
+}
+
+.chair--banner {
+    background-color: rgba(255,255,255,0.2);
+    width: 100%;
+    height: 30%;
+}
+
+.underline {
+    height: 10px;
+    width: 40%;
 }
 
 /*pricing*/
@@ -196,6 +211,10 @@ footer {
 
 .text-teal {
     color: #24B99E;
+}
+
+.text-black {
+    color: black;
 }
 
 .background-teal {
@@ -224,5 +243,9 @@ footer {
 
 .bold {
     font-weight: 500;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
 
