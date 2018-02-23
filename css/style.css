@@ -39,6 +39,23 @@
     font-style: normal;
 }
 
+/*placeholder override*/
+::-webkit-input-placeholder {
+    opacity: 0.4;
+}
+
+ { /* Firefox 18- */
+    opacity: 0.4;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    opacity: 0.4;
+}
+
+:-ms-input-placeholder {
+    opacity: 0.4;
+}
+
 
 * {
     margin: 0;
@@ -199,7 +216,7 @@ section.pricing {
     height: 700px;
 }
 
-section.pricing .section-header {
+.section-header {
     height: 80px;
 }
 
@@ -308,6 +325,74 @@ section.pricing input {
 }
 
 /*contact*/
+section.contact {
+    height: 400px;
+}
+
+.form-left {
+    float: left;
+    width: 60%;
+}
+
+.left input {
+    border-radius: 0;
+    width: 100%;
+    height: 2em;
+}
+
+textarea {
+    margin-top: 30px;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    font-size: 20px;
+}
+
+.right {
+    float: left;
+    width: 40%;
+    padding-left: 40px;
+}
+
+.red-chair {
+    height: 150px;
+    width: 200px;
+    background-image: url(../images/red_chair.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.agreement {
+    width: 100%;
+}
+
+.agreement .checkbox {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/form_ok.jpg);
+    background-position: center;
+    background-size: contain;
+    float: left;
+}
+
+.agreement p {
+    display: inline-block;
+    float: left;
+}
+
+.form-right input {
+    width: 100%;
+}
+
+
+
+
 
 /*Footer*/
 footer {
