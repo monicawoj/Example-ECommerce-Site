@@ -73,7 +73,7 @@ header {
     height: 50px;
 }
 
-h1 {
+header p {
     padding-top: 15px;
     font-size: 14px;
     letter-spacing: 0.2em;
@@ -142,7 +142,7 @@ section.gradient {
     padding-right: 30px;
 }
 
-.next-to-chair h2 {
+h1 {
     margin-bottom: 20px;
     font-size: 35px;
     font-weight: 300;
@@ -160,13 +160,11 @@ input {
 /*products*/
 section.products {
     height: 300px;
-    width: 100%;
 }
 
 .chair {
     height: 200px;
     width: 32%;
-    border: 1px solid red;
     float: left;
     margin-top: 50px;
     margin-right: 2%;
@@ -174,6 +172,7 @@ section.products {
 
 .chair:last-child {
     margin-right: 0%;
+    height: 220px;
 }
 
 .claire {
@@ -196,6 +195,9 @@ section.products {
 }
 
 /*pricing*/
+section.pricing {
+    height: 700px;
+}
 
 /*contact*/
 
@@ -221,12 +223,20 @@ footer {
     background-color: #24B99E;
 }
 
+.background-white {
+    background-color: white;
+}
+
 .grey {
     background-color: #F1F1F1;
 }
 
 .dark-grey {
     background-color: #E4E4E4;
+}
+
+.darkest-grey {
+    background-color: #C2C2C2;
 }
 
 .light-grey {
@@ -242,10 +252,21 @@ footer {
 }
 
 .bold {
-    font-weight: 500;
+    font-weight: bold;
+}
+
+.light {
+    font-weight: light;
 }
 
 .capitalize {
     text-transform: capitalize;
 }
 
+.border-grey {
+    border: 1px solid #DBDBDB;
+}
+
+.border-teal {
+    border: 1px solid #24B99E;
+}
