@@ -1,0 +1,228 @@
+/* Adding fonts - Raleway Normal, Bold, Light */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/Raleway-Bold.woff') format('woff'),
+    url('../fonts/Raleway-Bold.ttf') format('truetype'),
+    url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.eot');
+    src: local('Raleway Light'), local('Raleway-Light'),
+    url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Light.woff2') format('woff2'),
+    url('../fonts/Raleway-Light.woff') format('woff'),
+    url('../fonts/Raleway-Light.ttf') format('truetype'),
+    url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/Raleway-Regular.woff') format('woff'),
+    url('../fonts/Raleway-Regular.ttf') format('truetype'),
+    url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+.main-width {
+    width: 100%;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+div.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*header*/
+header {
+    background-color: black;
+    height: 50px;
+}
+
+h1 {
+    padding-top: 15px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    float: left;
+}
+
+nav {
+    padding-top: 15px;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+/*main focus area*/
+section.gradient {
+    height: 500px;
+    padding-top: 80px;
+    background: rgba(252,252,252,1);
+    background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(209,209,209,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,252,252,1)), color-stop(100%, rgba(209,209,209,1)));
+    background: -webkit-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(209,209,209,1) 100%);
+    background: -o-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(209,209,209,1) 100%);
+    background: -ms-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(209,209,209,1) 100%);
+    background: linear-gradient(to bottom, rgba(252,252,252,1) 0%, rgba(209,209,209,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1', GradientType=0 );
+}
+
+.arrow {
+    font-size: 100px;
+    font-weight: 100;
+    margin-top: 110px;
+    width: 10%;
+}
+
+.left {
+    float: left;
+    text-align: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.black-chair {
+    height: 350px;
+    width: 35%;
+    background-image: url(../images/black_chair.png);
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.next-to-chair {
+    height: 350px;
+    width: 45%;
+    float: left;
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.next-to-chair h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+input {
+    color: white;
+    width: 50%;
+    height: 18%;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/*products*/
+section.products {
+    height: 300px;
+    width: 100%;
+}
+
+.chair {
+    height: 200px;
+    width: 32%;
+    border: 1px solid red;
+    float: left;
+    margin-top: 50px;
+}
+
+.chair:first-child {
+    margin-right: 2%;
+}
+
+.chair:last-child {
+    float: right;
+    padding-right: 0;
+}
+
+/*pricing*/
+
+/*contact*/
+
+/*Footer*/
+footer {
+
+}
+
+/*Color and text style*/
+.text-white {
+    color: white;
+}
+
+.text-teal {
+    color: #24B99E;
+}
+
+.background-teal {
+    background-color: #24B99E;
+}
+
+.grey {
+    background-color: #F1F1F1;
+}
+
+.dark-grey {
+    background-color: #E4E4E4;
+}
+
+.light-grey {
+    background-color: #F9F9F9;
+}
+
+.grey-text {
+    color: #606060;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 500;
+}
+
