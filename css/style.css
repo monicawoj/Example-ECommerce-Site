@@ -382,22 +382,45 @@ textarea {
 }
 
 .agreement p {
-    display: inline-block;
     float: left;
+    width: 80%;
+    padding-left: 20px;
 }
 
 .form-right input {
     width: 100%;
 }
 
-
-
-
-
 /*Footer*/
-footer {
-
+.icon div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    float: left;
 }
+
+.flickr {
+    background-image: url(../images/flickr.png);
+}
+
+.vimeo {
+    background-image: url(../images/vimeo.png);
+}
+
+.pinterest {
+    background-image: url(../images/pinterest.png);
+}
+
+.twitter {
+    background-image: url(../images/twitter.png);
+}
+
+.form-right .logo {
+    float: right;
+}
+
 
 /*Color and text style*/
 .text-white {
