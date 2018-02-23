@@ -351,8 +351,7 @@ textarea {
     text-shadow: none;
     display: inline-block;
     text-align: start;
-    margin: 0em;
-    font: 300 16px system-ui;
+    font-size: 20px;
 }
 
 .form-right {
@@ -397,7 +396,7 @@ textarea {
 
 /*Footer*/
 footer {
-    clear: both;
+
 }
 
 /*Color and text style*/
