@@ -109,6 +109,33 @@ nav li {
     font-size: 14px;
 }
 
+.expanded-nav {
+    position: relative;
+    width: 100px;
+    left: 750px;
+}
+
+.expanded-nav ul {
+    list-style: none;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+.expanded-nav ul li {
+    padding: 5px;
+}
+
+.nav-arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+}
+
 /*main focus area*/
 section.gradient {
     height: 500px;
