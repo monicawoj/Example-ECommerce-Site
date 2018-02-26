@@ -298,7 +298,7 @@ section.pricing {
 
 .section-header h2 {
     padding-top: 50px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 section.pricing .plan {
@@ -312,58 +312,53 @@ section.pricing .plan {
 
 .medium-circle {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 150px;
+    width: 57px;
+    height: 57px;
+    top: -28px;
+    left: 135px;
     border-radius: 50%;
 }
 
 .small-circle {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    top: 8px;
-    left: 8px;
+    top: 14px;
+    left: 14px;
 }
 
 section.pricing h3 {
-    position: absolute;
     width: 100%;
     text-align: center;
     top: 50px;
     font-size: 24px;
+    margin: 30px auto;
 }
 
 .large-circle {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 20%;
-    left: 30%;
+    width: 130px;
+    height: 130px;
+    margin: 30px auto;
     border-radius: 50%;
 }
 
 .large-circle h4 {
-    position: absolute;
     font-size: 50px;
-    top: 20px;
-    left: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    float: left;
 }
 
 .large-circle h5 {
-    position: absolute;
     font-size: 14px;
-    top: 25px;
-    left: 85px;
+    padding-top: 15px;
+    float: left;
 }
 
 .large-circle p {
-    position: absolute;
     font-size: 14px;
-    top: 75px;
-    left: 20px;
+    padding-left: 19px;
 }
 
 section.pricing table{
@@ -375,7 +370,7 @@ section.pricing table{
 }
 
 tr {
-    height: 40px;
+    height: 45px;
     font-size: 20px;
     border: none;
 
@@ -401,25 +396,33 @@ section.pricing input {
     position: absolute;
     left: 100px;
     bottom: 20px;
-    width: 30%;
-    height: 10%;
+    width: 122px;
+    height: 34px;
     border: none;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 /*contact*/
 section.contact {
-    height: 400px;
+    height: 653px;
 }
 
 .form-left {
     float: left;
-    width: 60%;
+    width: 618px;
+    padding-top: 45px;
 }
 
 .form-left input {
     border-radius: 0;
     width: 100%;
-    height: 2em;
+    height: 66px;
+    margin-top: 26px;
+}
+
+.form-left input:first-of-type {
+    margin-top: 0px;
 }
 
 textarea {
@@ -433,18 +436,18 @@ textarea {
     text-shadow: none;
     display: inline-block;
     text-align: start;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .form-right {
     float: left;
-    width: 40%;
-    padding-left: 40px;
+    padding-left: 57px;
+    width: 400px;
 }
 
 .red-chair {
-    height: 150px;
-    width: 200px;
+    height: 238px;
+    width: 300px;
     background-image: url(../images/red_chair.png);
     background-position: center;
     background-size: cover;
@@ -452,6 +455,7 @@ textarea {
 
 .agreement {
     width: 100%;
+    margin-top: 30px;
 }
 
 .agreement .checkbox {
@@ -470,7 +474,18 @@ textarea {
 }
 
 .form-right input {
-    width: 100%;
+    margin-top: 30px;
+    width: 343px;
+    height: 62px;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+::placeholder {
+    font-size: 24px;
+    font-family: Raleway;
+    padding-top: 22px;
+    padding-left: 10px;
 }
 
 /*Footer*/
