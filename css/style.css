@@ -39,24 +39,6 @@
     font-style: normal;
 }
 
-/*!*placeholder override*!
-::-webkit-input-placeholder {
-    opacity: 0.4;
-}
-
- { !* Firefox 18- *!
-    opacity: 0.4;
-}
-
-::-moz-placeholder {  !* Firefox 19+ *!
-    opacity: 0.4;
-}
-
-:-ms-input-placeholder {
-    opacity: 0.4;
-}*/
-
-
 * {
     margin: 0;
     padding: 0;
