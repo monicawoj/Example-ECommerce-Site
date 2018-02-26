@@ -405,7 +405,7 @@ section.pricing input {
 
 /*contact*/
 section.contact {
-    height: 653px;
+    height: 600px;
 }
 
 .form-left {
@@ -469,8 +469,9 @@ textarea {
 
 .agreement p {
     float: left;
-    width: 80%;
+    width: 85%;
     padding-left: 20px;
+    padding-top: 5px;
 }
 
 .form-right input {
@@ -489,9 +490,17 @@ textarea {
 }
 
 /*Footer*/
+footer {
+    height: 60px;
+}
+
+footer .form-left {
+    padding-top: 0;
+}
+
 .icon div {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
@@ -516,6 +525,7 @@ textarea {
 
 .form-right .logo {
     float: right;
+    padding-top: 10px;
 }
 
 
