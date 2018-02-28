@@ -144,6 +144,7 @@ header nav li{
 
 /*main focus area*/
 section.gradient {
+    padding-top: 100px;
     height: 500px;
     background: rgba(252,252,252,1);
     background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(209,209,209,1) 100%);
@@ -242,8 +243,6 @@ section.products {
 
 .chair:last-child {
     margin-right: 0;
-    height: 254px;
-    width: 340px;
 }
 
 .clair {
@@ -254,10 +253,16 @@ section.products {
     background-image: url(../images/box2_img.jpg);
 }
 
+.monica {
+    background-image: url(../images/box3_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .chair--banner {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.5);
     width: 100%;
-    height: 30%;
+    height: 20%;
 
 }
 
@@ -266,34 +271,47 @@ section.products {
     margin-left: 15px;
 }
 
-.chair--banner .underline {
-    margin-left: 15px;
-}
-
-.chair--hover .chair--banner {
-    margin-top: 26px;
-    margin-left: 0;
-}
-
-.chair--hover .chair--banner p {
-    margin-top: 26px;
-    margin-left: 22px;
-}
-
-.chair--hover .chair--banner .underline {
-    margin-left: 22px;
-}
-
 .underline {
     height: 6px;
     width: 40%;
 }
 
-.chair--hover .chair--banner p.product-description {
+div.product-description {
     font-size: 14px;
     padding-right: 30px;
     margin-top: 16px;
     line-height: 19px;
+    display: none;
+}
+
+/*product section hover*/
+.chair:hover {
+    background-color: white;
+    background-image: none;
+    height: 250px;
+    width: 340px;
+}
+
+.chair:hover .underline {
+    margin-left: 15px;
+}
+
+.chair:hover .chair--banner {
+    margin-top: 26px;
+    margin-left: 0;
+}
+
+.chair:hover .chair--banner p {
+    margin-top: 26px;
+    margin-left: 22px;
+}
+
+.chair:hover .chair--banner .underline {
+    margin-left: 22px;
+}
+
+.chair:hover div.product-description {
+    display: block;
 }
 
 /*pricing*/
@@ -393,14 +411,6 @@ tr:nth-of-type(2n+1) {
     background-color: #E4E4E4;
 }
 
-div.hover tr:nth-of-type(2n){
-    background-color: #F1F1F1;
-}
-
-div.hover tr:nth-of-type(2n+1){
-    background-color: white;
-}
-
 section.pricing input {
     position: absolute;
     left: 100px;
@@ -410,6 +420,38 @@ section.pricing input {
     border: none;
     border-radius: 5px;
     font-size: 14px;
+}
+
+/*Pricing section - on hover*/
+section.pricing .plan:hover {
+    background-color: #24B99E;
+    border: 1px solid #24B99E;
+}
+
+section.pricing .plan:hover .medium-circle {
+    background-color: #24B99E;
+    border: 1px solid #24B99E;
+}
+
+section.pricing .plan:hover .small-circle {
+    background-color: white;
+}
+
+section.pricing .plan:hover h3 {
+    color: white;
+}
+
+section.pricing .plan:hover tr:nth-of-type(2n) {
+    background-color: #E4E4E4;
+}
+
+section.pricing .plan:hover tr:nth-of-type(2n+1) {
+    background-color: #F1F1F1;
+}
+
+section.pricing .plan:hover input {
+    background-color: white;
+    color: #24B99E;
 }
 
 /*contact*/
