@@ -370,22 +370,28 @@ section.pricing h3 {
     border-radius: 50%;
 }
 
-.large-circle h4 {
-    font-size: 50px;
-    padding-left: 15px;
-    padding-top: 15px;
-    float: left;
+.large-circle div.price {
+    width: 85%;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
-.large-circle h5 {
+.large-price-text {
+    font-size: 50px;
+    vertical-align: top;
+}
+
+.small-price-text {
     font-size: 14px;
-    padding-top: 15px;
-    float: left;
+    vertical-align: top;
 }
 
 .large-circle p {
     font-size: 14px;
-    padding-left: 19px;
+    width: 100%;
+    text-align: center;
 }
 
 section.pricing table{
