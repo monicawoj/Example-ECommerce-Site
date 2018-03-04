@@ -166,6 +166,8 @@ body {
 .panel_left h4 , .panel_right h4{
   color: #24baa0;
   font-size: 23px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .panel_left span{
@@ -179,7 +181,7 @@ body {
   display: block;
   font-size: 22px;
   color: #24baa0;
-  margin-top:10px;
+  margin-top: 10px;
 }
 .sum_label{
   display: inline-block;

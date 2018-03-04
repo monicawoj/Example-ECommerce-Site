@@ -38,18 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     listPanel.parentElement.querySelector('.list_label').innerText = element.innerText;
                     listPanel.parentElement.querySelector('.list_label').style.color = 'black';
                     listPanel.style.display = 'none';
-                    console.log(element);
+                    console.log(element.parentElement.parentElement);
+                    console.log(dropDownLists[0]);
 
-                    if (element == element.parentElement.querySelector('li:nth-of-type(2)')) {
-                        console.log('hello');
+                    //update summary when each drop-down list is edited
+                    if (element.parentElement.parentElement === dropDownLists[0]) {
+                        rightPanel.querySelector('.title.value').innerText = element.innerText;
+                    }
+                    else if (element.parentElement.parentElement === dropDownLists[1]) {
                         leftPanel.querySelector('.color').innerText = 'Color';
                         rightPanel.querySelector('.color.value').innerText = element.innerText;
-                    }
-                    else if (element.className.indexOf('pattern') !== -1) {
+                    } else if (element.parentElement.parentElement === dropDownLists[2]) {
                         leftPanel.querySelector('.pattern').innerText = 'Pattern';
                         rightPanel.querySelector('.pattern.value').innerText = element.innerText;
-                    } else if (element.className.indexOf('pattern') !== -1) {
-                        rightPanel.querySelector('.title.value').innerText = element.innerText;
                     }
                 });
             });
