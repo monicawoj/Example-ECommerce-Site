@@ -107,4 +107,43 @@ document.addEventListener('DOMContentLoaded', function() {
             totalPriceContainer.innerText = parseInt(totalPriceContainer.innerText) - this.dataset.price;
         }
     });
+
+    //showcase section slider
+    var previousButton = document.querySelector('.previous');
+    var nextButton = document.querySelector('.next');
+    var sliderItems = document.querySelectorAll('.showcase-slider li');
+    var sliderIndex = 0;
+
+    //initialize first image
+    makeVisible(sliderIndex);
+
+    //move to previous
+    previousButton.addEventListener('click', function(event) {
+        sliderIndex -= 1;
+        //for 'previous' when first image
+        if (sliderIndex < 0) {
+            sliderIndex = sliderItems.length - 1;
+        }
+        makeVisible(sliderIndex);
+    });
+
+    //move to next
+    nextButton.addEventListener('click', function(event) {
+        sliderIndex += 1;
+        //for 'next' when last image visible
+        if (sliderIndex > sliderItems.length - 1) {
+            sliderIndex = 0;
+        }
+        makeVisible(sliderIndex);
+    });
+
+    //make list item visible
+    function makeVisible(index) {
+        var visibleItem = document.querySelector('li.visible');
+        if (visibleItem !== null) {
+            visibleItem.classList.remove('visible');
+        }
+        sliderItems[index].classList.add('visible');
+    }
+
 });

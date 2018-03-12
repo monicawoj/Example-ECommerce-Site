@@ -142,7 +142,7 @@ header nav li{
 }
 
 /*main focus area*/
-section.gradient {
+section.showcase {
     padding-top: 100px;
     height: 500px;
     background: rgba(252,252,252,1);
@@ -155,7 +155,7 @@ section.gradient {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1', GradientType=0 );
 }
 
-section.gradient .container {
+section.showcase .container {
     top: -50px;
     position: relative;
 }
@@ -165,30 +165,54 @@ section.gradient .container {
     font-size: 80px;
     font-weight: 300;
     margin-top: 160px;
+    cursor: pointer;
 }
 
-.left {
+.previous {
     float: left;
     text-align: left;
     margin-left: 3px;
 }
 
-.right {
+.next {
     float: right;
     text-align: right;
     margin-right: 13px;
 }
 
-div.black-chair {
+.showcase-slider div {
     height: 420px;
     width: 430px;
-    background-image: url(../images/black_chair.png);
     background-position: center;
     background-size: cover;
     float: left;
     position: absolute;
     margin-left: 43px;
     margin-top: 22px;
+}
+
+.black-chair {
+    background-image: url(../images/black_chair.png);
+}
+
+.blue-chair {
+    background-image: url(../images/blue_chair.png);
+}
+
+.green-chair {
+    background-image: url(../images/green_chair.png);
+}
+
+.showcase-slider{
+    list-style: none;
+}
+
+.showcase-slider li{
+    display: none;
+}
+
+.showcase-slider .visible{
+    display: inline-block;
 }
 
 .next-to-chair {
@@ -667,7 +691,7 @@ footer .form-left {
 
 .application {
     display: none;
-    height: 70vh;
+    height: 80vh;
 }
 
 .application h3 {
@@ -804,9 +828,7 @@ footer .form-left {
 .summary_panel {
     background-color: white;
     width:100%;
-    /*height:195px;*/
-    /*padding:10px;*/
-
+    height: 65%;
 }
 
 .application .green_button {
@@ -814,10 +836,10 @@ footer .form-left {
     color: white;
     text-align:center;
     width: 100%;
-    padding: 10px 30px;
-    font-size: 22px;
+    padding: 3px 0;
+    font-size: 20px;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 3px;
     text-decoration: none;
 }
 .panel_left {
@@ -826,7 +848,7 @@ footer .form-left {
     vertical-align: top;
     padding-bottom:10px;
     border-bottom:1px solid #e7e7e7;
-    height: 135px;
+    height: 150px;
 }
 
 .panel_right {
@@ -837,7 +859,7 @@ footer .form-left {
     vertical-align: top;
     padding-bottom:10px;
     border-bottom:1px solid #e7e7e7;
-    height: 135px;
+    height: 150px;
 }
 .panel_right_prices {
     display: inline-block;
@@ -847,7 +869,7 @@ footer .form-left {
     vertical-align: top;
     padding-bottom:10px;
     border-bottom:1px solid #e7e7e7;
-    height: 135px;
+    height: 150px;
 }
 
 .summary_panel h4{
