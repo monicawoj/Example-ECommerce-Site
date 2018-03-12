@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     //define elements that we will be manipulating
+    var showCalculatorButton = document.querySelector('.showCalculator');
+    var calculator = document.querySelector('.application');
     var dropDownLists = document.querySelectorAll('.drop_down_list');
     var summaryPanel = document.querySelector('.summary_panel');
     var leftPanel = summaryPanel.querySelector('.panel_left');
@@ -8,6 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
     var rightPanelPrices = summaryPanel.querySelector('.panel_right_prices');
     var totalPriceContainer = document.querySelector('.sum').querySelector('strong');
     var checkbox = document.querySelector('.checkbox');
+
+    //show calculator when "Build Custom Chair" button is clicked
+    showCalculatorButton.addEventListener('click', function(event) {
+        if (this.value !== 'HIDE CHAIR BUILDER') {
+            calculator.style.display = 'block';
+            this.value = 'HIDE CHAIR BUILDER';
+        } else {
+            calculator.style.display = 'none';
+            this.value = 'BUILD CUSTOM CHAIR';
+        }
+    });
 
     [...dropDownLists].forEach(function (element) {
         element.querySelector('.list_arrow').addEventListener('click', function (event) {

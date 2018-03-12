@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Sit On Chair</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -100,7 +101,7 @@
 </section>
 <section class="pricing main-width grey">
     <div class="container section-header">
-        <h2 class="uppercase light">Pricing</h2>
+        <h2 class="uppercase light">Packages & Pricing</h2>
         <div class="underline background-teal"></div>
     </div>
     <div class="container">
@@ -176,6 +177,85 @@
             </table>
             <input class="background-teal text-white uppercase light" type="submit" value="Select">
         </div>
+        <input class="showCalculator background-teal" type="submit" value="BUILD CUSTOM CHAIR">
+    </div>
+</section>
+<section class="application grey main-width">
+    <div class="container calculator">
+        <section class="choice_part inline">
+            <header class="grey">
+                <h3>BUILD YOUR DREAM CHAIR</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="form">
+                <div class="drop_down_list">
+                    <span class="list_label">Choose model</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="90">Clair</li>
+                        <li data-price="110">Margarita</li>
+                        <li data-price="125">Monica</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Choose color</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="0">Red</li>
+                        <li data-price="0">Black</li>
+                        <li data-price="0">Orange</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Choose material</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="30">Fabric</li>
+                        <li data-price="80">Leather</li>
+                    </ul>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="transport" data-price="50">
+                    <label for="transport">Transport</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <div class="img"></div>
+        </section>
+
+        <section class="summary_part inline">
+            <header class="align_right grey">
+                <h3>SUMMARY</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h4 class="title">Your Chair</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="title value"></h4>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="panel_right_prices">
+                    <h4 class="title price"></h4>
+                    <span class="color price"></span>
+                    <span class="pattern price"></span>
+                    <span class="transport price"></span>
+                </div>
+                <div class="sum_label">TOTAL</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button uppercase">Place Order</a>
+        </section>
     </div>
 </section>
 <section class="contact main-width">
