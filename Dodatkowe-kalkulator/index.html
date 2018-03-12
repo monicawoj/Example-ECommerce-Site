@@ -22,34 +22,32 @@
                     <span class="list_label">Wybierz rodzaj</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Clair</li>
-                        <li>Margarita</li>
-                        <li>Monica</li>
+                        <li data-price="90">Clair</li>
+                        <li data-price="110">Margarita</li>
+                        <li data-price="125">Monica</li>
                     </ul>
                 </div>
                 <div class="drop_down_list">
                     <span class="list_label">Wybierz kolor</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Czerwony</li>
-                        <li>Czarny</li>
-                        <li>Pomarańczowy</li>
+                        <li data-price="0">Red</li>
+                        <li data-price="0">Black</li>
+                        <li data-price="0">Orange</li>
                     </ul>
                 </div>
                 <div class="drop_down_list">
                     <span class="list_label">Wybierz materiał</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Tkanina</li>
-                        <li>Skóra</li>
+                        <li data-price="30">Fabric</li>
+                        <li data-price="80">Leather</li>
                     </ul>
                 </div>
-                <div class="checkbox check-box">
-                    <input type="checkbox" id="transport" data-transport-price="200">
+                <div class="checkbox">
+                    <input type="checkbox" id="transport" data-price="50">
                     <label for="transport">Transport</label>
                 </div>
-                <!--<div class="checkbox"></div>-->
-                <!--<span class="list_label inline_text">Transport</span>-->
             </div>
         </section>
 
@@ -76,7 +74,13 @@
                     <span class="pattern value"></span>
                     <span class="transport value"></span>
                 </div>
-                <div class="sum_label">SUMA</div>
+                <div class="panel_right_prices">
+                    <h4 class="title price"></h4>
+                    <span class="color price"></span>
+                    <span class="pattern price"></span>
+                    <span class="transport price"></span>
+                </div>
+                <div class="sum_label">TOTAL</div>
                 <div class="sum"><strong></strong></div>
             </div>
             <a href="" class="green_button">Zamawiam</a>

@@ -49,6 +49,7 @@ body {
 .checkbox {
   position: relative;
   padding: 30px 30px 30px 0;
+  display: none;
 }
 .checkbox input {
   display: block;
@@ -145,7 +146,7 @@ body {
 }
 .panel_left {
   display: inline-block;
-  width: 185px;
+  width: 120px;
   vertical-align: top;
   padding-bottom:10px;
   border-bottom:1px solid #e7e7e7;
@@ -162,27 +163,31 @@ body {
   border-bottom:1px solid #e7e7e7;
   height: 135px;
 }
+.panel_right_prices {
+  display: inline-block;
+  width: 60px;
+  border-left:1px solid #e7e7e7;
+  text-align: right;
+  vertical-align: top;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+  height: 135px;
+}
 
-.panel_left h4 , .panel_right h4{
+.summary_panel h4{
   color: #24baa0;
   font-size: 23px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.panel_left span{
+.summary_panel span{
   margin-top:10px;
   font-size: 22px;
   color: #5b5a5a;
   display: block;
 }
 
-.panel_right span {
-  display: block;
-  font-size: 22px;
-  color: #24baa0;
-  margin-top: 10px;
-}
 .sum_label{
   display: inline-block;
   width: 185px;
@@ -228,11 +233,16 @@ body {
   display:none;
 }
 .list_panel li {
-  margin-top:10px;
+  line-height:30px;
   cursor: pointer;
   color: #585858;
+
 }
 
 .title {
   height: 30px;
+}
+
+.sum {
+  display:
 }
